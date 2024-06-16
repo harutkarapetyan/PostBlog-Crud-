@@ -17,7 +17,7 @@ from auth import auth_router
 from likes import like_router
 from comments import comment_router
 from settings import setting_router
-from images import image_router
+# from images import image_router
 from forgot_password import forgot_router
 
 
@@ -65,6 +65,6 @@ app.include_router(post_router)
 app.include_router(like_router)
 app.include_router(comment_router)
 app.include_router(setting_router)
-app.include_router(image_router)
+# app.include_router(image_router)
 app.include_router(forgot_router)
 
