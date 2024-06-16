@@ -71,13 +71,7 @@ def get_post(post_id: int, current_user=Depends(security.get_current_user)):
     if not post:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Post not found or you don't have permission")
 
-    return {
-        "post_id": post[0],
-        "title": post[1],
-        "content": post[2],
-        "user_id": post[3]
-    }
-
+    return post
 
 
 
